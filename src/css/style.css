@@ -1,0 +1,252 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--fundo-escuro);
+    color: var(--texto-principal);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--fundo-card);
+
+}
+
+nav .header-logo-pesquisa {
+    display: flex;
+    padding: 10px;
+}
+
+input {
+    background: var(--input);
+    border: none;
+    margin-left: 5px;
+    width: 250px;
+
+}
+
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--texto-principal);
+    margin-left: 20px;
+    background: url(/src/imagens/search.svg) no-repeat;
+    padding-left: 25px;
+}
+
+
+nav .icones {
+    display: flex;
+
+}
+
+.icones li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.solucoes {
+    border-left: 1px solid white;
+}
+
+.perfil {
+    margin-top: 20px;
+    background-color: var(--fundo-card);
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    border-radius: 16px;
+}
+
+.perfil .imagens {
+    display: flex;
+    position: relative;
+
+}
+
+.perfil .foto-perfil {
+    position: absolute;
+    transform: translateY(50px);
+    align-self: flex-end;
+    width: 160px;
+
+}
+
+.perfil .informacoes {
+    margin-top: 56px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    display: flex;
+
+
+}
+
+.informacoes-perfil h1 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.informacoes-perfil h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.informacoes-perfil .comentario,
+.informacoes-perfil .cidade {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: var(--texto-secundario);
+}
+
+.informacoes-perfil .cidade span {
+    font-weight: 700;
+    color: var(--primario);
+}
+
+.informacoes-perfil .seguidores,
+.informacoes-perfil a {
+    font-weight: 500;
+    color: var(--primario);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    border: 1px solid;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.btn.mensagem {
+    color: var(--texto-escuro);
+    background-color: var(--primario);
+}
+
+.instituicoes {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    gap: 10px;
+
+}
+
+.instituicoes .empresa,
+.instituicoes .faculdade {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.instituicoes .empresa:before {
+    content: url('/src/imagens/empresa.png');
+    padding-right: 5px;
+}
+
+.instituicoes .faculdade:before {
+    content: url('/src//imagens/ensino.png');
+    padding-right: 5px;
+}
+
+.destaque {
+    background-color: var(--fundo-card);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 780px;
+    border-radius: 16px;
+    margin: 20px 0;
+    padding: 20px;
+
+}
+
+.destaque ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.destaque li {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px 0;
+}
+
+.publicacao-destaque img {
+    margin-top: .4rem;
+    width: 100%;
+    height: 152px;
+    object-fit: cover;
+}
+
+.destaque h2 {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.destaque .texto-pequeno{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+
+.destaque .publicacao,
+.publicacao-destaque p.numero,
+.publicacao-destaque p.comentario {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.destaque .legenda {
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.destaque .publicacao {
+    padding-left: 5px;
+}
+
+
+.destaque span {
+    float: left;
+    width: 16px;
+    height: 16px;
+    shape-outside: circle();
+    clip-path: circle();
+
+}
+
+.destaque span.azul {
+    background: #378FE9;
+
+}
+
+.destaque span.verde {
+    background: #6DAE4F;
+    transform: translate(-9px);
+}
+
+.destaque span.laranja {
+    background: #DF704D;
+    transform: translate(-18px);
+
+}
+
+  
